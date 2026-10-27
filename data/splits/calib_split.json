@@ -1,0 +1,708 @@
+{
+  "split": "calib",
+  "seed": 0,
+  "n_pairs": 100,
+  "source_file": "primevul_valid_paired.jsonl",
+  "pairs": [
+    {
+      "pair_id": "5513b40999149090987a0341c018d05d3eea1272",
+      "vuln_idx": 198942,
+      "safe_idx": 285543,
+      "project": "gnulib",
+      "cwe": "CWE-19"
+    },
+    {
+      "pair_id": "c0fd449ec0870b050d350d6d844b1ea6dad4bc7d",
+      "vuln_idx": 210325,
+      "safe_idx": 432859,
+      "project": "FreeRDP",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "96daa4036a425ff3f23a7dfcba57bfb0f942bec6",
+      "vuln_idx": 217254,
+      "safe_idx": 519644,
+      "project": "ardour",
+      "cwe": "CWE-416"
+    },
+    {
+      "pair_id": "6402939ec86eaf226c8b8ae00ed983936b164908",
+      "vuln_idx": 208360,
+      "safe_idx": 408790,
+      "project": "linux",
+      "cwe": "CWE-401"
+    },
+    {
+      "pair_id": "17b24b3c97498935a2ef9777370b1151dfed3f6f",
+      "vuln_idx": 215446,
+      "safe_idx": 489598,
+      "project": "linux-2.6",
+      "cwe": "CWE-399"
+    },
+    {
+      "pair_id": "9380afd6df70e24eacbdbde33afc6a3950965d22",
+      "vuln_idx": 210838,
+      "safe_idx": 440929,
+      "project": "linux",
+      "cwe": "CWE-362"
+    },
+    {
+      "pair_id": "6d816e088c359866f9867057e04f244c608c42fe",
+      "vuln_idx": 212266,
+      "safe_idx": 456954,
+      "project": "linux",
+      "cwe": "CWE-416"
+    },
+    {
+      "pair_id": "d6ed5bcfe1dcab9e85a4d39931bd18d99018e75b",
+      "vuln_idx": 197761,
+      "safe_idx": 263524,
+      "project": "tensorflow",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "4350a11c663b0d75f8119743bffb7736d87abd4d",
+      "vuln_idx": 198370,
+      "safe_idx": 273215,
+      "project": "inspircd",
+      "cwe": "CWE-200"
+    },
+    {
+      "pair_id": "fb18802a338b36f675a388fc03d2aa504a0d0899",
+      "vuln_idx": 206468,
+      "safe_idx": 381516,
+      "project": "linux",
+      "cwe": "CWE-401"
+    },
+    {
+      "pair_id": "1cc7e83c3bdfaafbc5919c95025592d8de3a170e",
+      "vuln_idx": 214405,
+      "safe_idx": 478396,
+      "project": "c-ares",
+      "cwe": "CWE-310"
+    },
+    {
+      "pair_id": "f851613f8f0fb0c838d160ced13c134f778e3ce7",
+      "vuln_idx": 195747,
+      "safe_idx": 232376,
+      "project": "tensorflow",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "453393369dc9806d2455151e329c599684762428",
+      "vuln_idx": 212944,
+      "safe_idx": 463460,
+      "project": "linux",
+      "cwe": "CWE-125"
+    },
+    {
+      "pair_id": "d9204be9f49520cdaaeb2541d1dc5187b23f31d9",
+      "vuln_idx": 195972,
+      "safe_idx": 235840,
+      "project": "tensorflow",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "744009c9e5cc5d0447f0dc39d055f917e1fd9e16",
+      "vuln_idx": 198002,
+      "safe_idx": 267926,
+      "project": "tensorflow",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "8fcf61523644df42e1905c81bed26838e0b04f91",
+      "vuln_idx": 215830,
+      "safe_idx": 496454,
+      "project": "grep",
+      "cwe": "CWE-189"
+    },
+    {
+      "pair_id": "41d7026946fafbd4d1ec0bcaca3ea30a6e8eed22",
+      "vuln_idx": 207463,
+      "safe_idx": 398021,
+      "project": "ipmitool",
+      "cwe": "CWE-120"
+    },
+    {
+      "pair_id": "1e922ccdf6bf46a3a52641f99fd47d54c1decd13",
+      "vuln_idx": 197301,
+      "safe_idx": 256387,
+      "project": "tensorflow",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "803969389ca9c06237075a7f8eeb1a19e6651759",
+      "vuln_idx": 217253,
+      "safe_idx": 519639,
+      "project": "gilcc",
+      "cwe": "CWE-120"
+    },
+    {
+      "pair_id": "d96a6b8bcc7439fa7e3876207aa0a8e79c8451b6",
+      "vuln_idx": 206998,
+      "safe_idx": 390690,
+      "project": "clamav-devel",
+      "cwe": "CWE-125"
+    },
+    {
+      "pair_id": "59a0bff1a5a2f0a0eac07e4bf94d4aea9dd3708d",
+      "vuln_idx": 208672,
+      "safe_idx": 413412,
+      "project": "libyang",
+      "cwe": "CWE-252"
+    },
+    {
+      "pair_id": "31bd5026304677faa8a0b77602c6154171b9aec1",
+      "vuln_idx": 195958,
+      "safe_idx": 235720,
+      "project": "tensorflow",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "dd96882877721703e19272fe25034560b794061b",
+      "vuln_idx": 216101,
+      "safe_idx": 499640,
+      "project": "cpio",
+      "cwe": "CWE-190"
+    },
+    {
+      "pair_id": "d1e7fd6462ca9fc76650fbe6ca800e35b24267da",
+      "vuln_idx": 205956,
+      "safe_idx": 375155,
+      "project": "linux",
+      "cwe": "CWE-190"
+    },
+    {
+      "pair_id": "863d31ae775d56b785dc5b0105b6d251515d81d5",
+      "vuln_idx": 206271,
+      "safe_idx": 379446,
+      "project": "bash",
+      "cwe": "CWE-119"
+    },
+    {
+      "pair_id": "d0c530919d8cd4d7a774e38ab064e0fabdae34e6",
+      "vuln_idx": 197465,
+      "safe_idx": 259078,
+      "project": "mpv",
+      "cwe": "CWE-134"
+    },
+    {
+      "pair_id": "0ab290774f91a23bebe30a358fde4e53ab4876a0",
+      "vuln_idx": 195754,
+      "safe_idx": 232648,
+      "project": "tensorflow",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "5bfea2d9b17f1034a68147a8b03b9789af5700f9",
+      "vuln_idx": 201788,
+      "safe_idx": 321574,
+      "project": "linux",
+      "cwe": "CWE-119"
+    },
+    {
+      "pair_id": "6a9f5e4f7c3fd5ddab3e6727b071904d76773952",
+      "vuln_idx": 197747,
+      "safe_idx": 263377,
+      "project": "nDPI",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "e310c68d7b38d521e341f4e8a36f54303079d74e",
+      "vuln_idx": 215902,
+      "safe_idx": 497483,
+      "project": "clutter",
+      "cwe": "CWE-264"
+    },
+    {
+      "pair_id": "c243f4539233053466c1309bde606815351bee81",
+      "vuln_idx": 207218,
+      "safe_idx": 394100,
+      "project": "LibRaw",
+      "cwe": "CWE-125"
+    },
+    {
+      "pair_id": "8ba6fa29cd8bf9cef9b718dc31c78c73081f5b31",
+      "vuln_idx": 198557,
+      "safe_idx": 277030,
+      "project": "tensorflow",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "2f56e1179cab6affeb8afa9d6c324008fe40d8e3",
+      "vuln_idx": 215165,
+      "safe_idx": 484351,
+      "project": "abcm2ps",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "0137c24d60934f131b25506a88c9464e4dc827de",
+      "vuln_idx": 198763,
+      "safe_idx": 283344,
+      "project": "wireshark",
+      "cwe": "CWE-835"
+    },
+    {
+      "pair_id": "a4a5aeeb17d32937d8c7d743dae9a4cc755ce773",
+      "vuln_idx": 197927,
+      "safe_idx": 265791,
+      "project": "znc",
+      "cwe": "CWE-22"
+    },
+    {
+      "pair_id": "0a8e7244d494ae98e9756355dfbfb6697ded2ff9",
+      "vuln_idx": 206065,
+      "safe_idx": 376801,
+      "project": "libavif",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "4f663d4b8f0bec1b48da6fa091a7d29609980fa4",
+      "vuln_idx": 197806,
+      "safe_idx": 264414,
+      "project": "tensorflow",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "a324ac84e573fba362a5e53d4e74d5de6729933e",
+      "vuln_idx": 198140,
+      "safe_idx": 269702,
+      "project": "tensorflow",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "2c120e576ebb73bc247790184702ba58dc0afc39",
+      "vuln_idx": 205887,
+      "safe_idx": 374508,
+      "project": "varnish-modules",
+      "cwe": "CWE-476"
+    },
+    {
+      "pair_id": "26896f01467a28651f7a536143fe5ac8449d4041",
+      "vuln_idx": 201423,
+      "safe_idx": 319215,
+      "project": "linux",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "a9b135760aea6d1790d447d351c56b78889dac22",
+      "vuln_idx": 216710,
+      "safe_idx": 505209,
+      "project": "core",
+      "cwe": "CWE-772"
+    },
+    {
+      "pair_id": "4397f04575c44e1440ec2e49b6302785c95fd2f8",
+      "vuln_idx": 211099,
+      "safe_idx": 445672,
+      "project": "linux",
+      "cwe": "CWE-415"
+    },
+    {
+      "pair_id": "04edfa82c1f3fa2bc3621ccdad2f93bdbf00e4f9",
+      "vuln_idx": 198095,
+      "safe_idx": 268829,
+      "project": "radare2",
+      "cwe": "CWE-78"
+    },
+    {
+      "pair_id": "f44a8ae8aa27ecef69528db9aec220f12492810e",
+      "vuln_idx": 211502,
+      "safe_idx": 448852,
+      "project": "ceph",
+      "cwe": "CWE-617"
+    },
+    {
+      "pair_id": "f9308839198aca5e68a65194f151a1de92398f54",
+      "vuln_idx": 208379,
+      "safe_idx": 409137,
+      "project": "exiv2",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "f1e68d22d1b35459421710587a0dcbab6900b51f",
+      "vuln_idx": 206717,
+      "safe_idx": 385763,
+      "project": "ImageMagick6",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "b048f558dd7c26a0c630a2cff29d3d8981eaf6b9",
+      "vuln_idx": 209909,
+      "safe_idx": 423628,
+      "project": "postgres",
+      "cwe": "CWE-862"
+    },
+    {
+      "pair_id": "2e7891080667c59ac80f788eef4d59d447595772",
+      "vuln_idx": 216904,
+      "safe_idx": 509429,
+      "project": "server",
+      "cwe": "CWE-617"
+    },
+    {
+      "pair_id": "fca9874a9b42a2134f907d2fb46ab774a831404a",
+      "vuln_idx": 197183,
+      "safe_idx": 255022,
+      "project": "tensorflow",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "8faece5f906725c10e7a1f6caf84452abadbdc7b",
+      "vuln_idx": 215467,
+      "safe_idx": 490193,
+      "project": "linux-2.6",
+      "cwe": "CWE-189"
+    },
+    {
+      "pair_id": "cfa94cbf10302bedc779703f874ee2e8387a0721",
+      "vuln_idx": 196991,
+      "safe_idx": 249484,
+      "project": "libiec61850",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "f231ec511b9a09f43f49b2c7bb7c60b8046276b1",
+      "vuln_idx": 196610,
+      "safe_idx": 241036,
+      "project": "veyon",
+      "cwe": "CWE-295"
+    },
+    {
+      "pair_id": "9f77fc3dd2394373e1be753952b00dafa1a9b7da",
+      "vuln_idx": 205671,
+      "safe_idx": 370198,
+      "project": "FreeRDP",
+      "cwe": "CWE-190"
+    },
+    {
+      "pair_id": "78b0e30954111cfaba0edbeee85450d8cbc6fdf6",
+      "vuln_idx": 206709,
+      "safe_idx": 385616,
+      "project": "node",
+      "cwe": "CWE-119"
+    },
+    {
+      "pair_id": "c8bcd9c5be24fb9e6132e97da5a35e55a83e36b9",
+      "vuln_idx": 201881,
+      "safe_idx": 326074,
+      "project": "linux",
+      "cwe": "CWE-416"
+    },
+    {
+      "pair_id": "39ce47f219b09c380b81f89fe54ac586c8db6bde",
+      "vuln_idx": 214926,
+      "safe_idx": 481492,
+      "project": "curl",
+      "cwe": "CWE-200"
+    },
+    {
+      "pair_id": "25259a84827234a283f6f9db72978198c7a3f268",
+      "vuln_idx": 204639,
+      "safe_idx": 362854,
+      "project": "openexr",
+      "cwe": "CWE-119"
+    },
+    {
+      "pair_id": "5899741d0421391ca878da47907b1452f06aaf1b",
+      "vuln_idx": 195663,
+      "safe_idx": 230153,
+      "project": "tensorflow",
+      "cwe": "CWE-20"
+    },
+    {
+      "pair_id": "c68402fa7e279d42886d5951d1ea8ac2facc1ea5",
+      "vuln_idx": 206517,
+      "safe_idx": 381986,
+      "project": "teeworlds",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "19b61392c5a852b4e8a0bf35aecb969983c5932d",
+      "vuln_idx": 212837,
+      "safe_idx": 462461,
+      "project": "linux",
+      "cwe": "CWE-662"
+    },
+    {
+      "pair_id": "4ea4b0c6a318209ac09b15aaa906c7b4a13b988c",
+      "vuln_idx": 212088,
+      "safe_idx": 454781,
+      "project": "mysql-wsrep",
+      "cwe": "CWE-77"
+    },
+    {
+      "pair_id": "8a6d9a02fa991a91ff90ccdc73b5ceabaa6cb9ec",
+      "vuln_idx": 196884,
+      "safe_idx": 247279,
+      "project": "doom-vanille",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "cb222aed03d798fc074be55e59d9a112338ee784",
+      "vuln_idx": 204147,
+      "safe_idx": 353362,
+      "project": "linux",
+      "cwe": "CWE-703"
+    },
+    {
+      "pair_id": "b4487b93545214a9db8cbf32e86411677b0cca21",
+      "vuln_idx": 210250,
+      "safe_idx": 431495,
+      "project": "linux",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "f61c57bd425878be108ec787f4d96390579fb83e",
+      "vuln_idx": 197303,
+      "safe_idx": 256405,
+      "project": "tensorflow",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "2782cb0495b7450bd8fe43ce4af886b66fea6c40",
+      "vuln_idx": 209954,
+      "safe_idx": 424886,
+      "project": "libssh-mirror",
+      "cwe": "CWE-476"
+    },
+    {
+      "pair_id": "839085f8026afd6f6920a0c31ad2a9d880d97932",
+      "vuln_idx": 216728,
+      "safe_idx": 505492,
+      "project": "graphviz",
+      "cwe": "CWE-476"
+    },
+    {
+      "pair_id": "c9f25bca048443e317f1994ba9b106f2386688c3",
+      "vuln_idx": 217239,
+      "safe_idx": 519174,
+      "project": "serenity",
+      "cwe": "CWE-120"
+    },
+    {
+      "pair_id": "3e8a0a559c66ee9e7468195691a56fefc3589740",
+      "vuln_idx": 215361,
+      "safe_idx": 488804,
+      "project": "linux-2.6",
+      "cwe": "CWE-189"
+    },
+    {
+      "pair_id": "e99246246b4061f7e71463f8806b9dcad65affa0",
+      "vuln_idx": 215904,
+      "safe_idx": 497609,
+      "project": "libssh",
+      "cwe": "CWE-310"
+    },
+    {
+      "pair_id": "a6f9e300161f4cb54713da22f65b261595e8e614",
+      "vuln_idx": 198585,
+      "safe_idx": 277954,
+      "project": "vim",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "512457466b87039c6a8d25887fdaca6173619546",
+      "vuln_idx": 208547,
+      "safe_idx": 412620,
+      "project": "kopano-core",
+      "cwe": "CWE-770"
+    },
+    {
+      "pair_id": "e49d45594002d4d3fbc1f03488e6dfc0a0a65836",
+      "vuln_idx": 195057,
+      "safe_idx": 220894,
+      "project": "keepkey-firmware",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "ad9f151e560b016b6ad3280b48e42fa11e1a5440",
+      "vuln_idx": 202069,
+      "safe_idx": 328360,
+      "project": "linux",
+      "cwe": "CWE-665"
+    },
+    {
+      "pair_id": "3fcd042d26d70856e826a42b5f93dc4854d80bf0",
+      "vuln_idx": 216036,
+      "safe_idx": 498970,
+      "project": "patch",
+      "cwe": "CWE-78"
+    },
+    {
+      "pair_id": "5e52ef5a461570cfb68f3bdbbebfe972cb4e0fd8",
+      "vuln_idx": 197084,
+      "safe_idx": 251872,
+      "project": "tensorflow",
+      "cwe": "CWE-125"
+    },
+    {
+      "pair_id": "a47ef55db2337d29de19c50cd29b0deb2871d31c",
+      "vuln_idx": 197832,
+      "safe_idx": 264754,
+      "project": "asylo",
+      "cwe": "CWE-200"
+    },
+    {
+      "pair_id": "6c3220444ed06b5796dedfd53a0f4becd903c0d1",
+      "vuln_idx": 209807,
+      "safe_idx": 421514,
+      "project": "src",
+      "cwe": "CWE-476"
+    },
+    {
+      "pair_id": "f5e73cc7c9cd973b516a618da877c87b80950b65",
+      "vuln_idx": 210399,
+      "safe_idx": 434145,
+      "project": "FreeRDP",
+      "cwe": "CWE-125"
+    },
+    {
+      "pair_id": "eb84b0e3c5f2a86013b6fcfb800d187896a648fa",
+      "vuln_idx": 196672,
+      "safe_idx": 242168,
+      "project": "exif",
+      "cwe": "CWE-476"
+    },
+    {
+      "pair_id": "90255f0834eead08d59f46b0bda7b1580451cc0f",
+      "vuln_idx": 205775,
+      "safe_idx": 371767,
+      "project": "ImageMagick6",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "26eb323554ffccd173e8a79a8c05c15b685ae4d1",
+      "vuln_idx": 198430,
+      "safe_idx": 274583,
+      "project": "tensorflow",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "60b7ed54a41b550d50caf7f2418db4a7e75b5bdc",
+      "vuln_idx": 205900,
+      "safe_idx": 374683,
+      "project": "linux",
+      "cwe": "CWE-476"
+    },
+    {
+      "pair_id": "ff72c50a2c43c57aead933eb4903ad1ca6d1748a",
+      "vuln_idx": 206666,
+      "safe_idx": 384543,
+      "project": "ceph",
+      "cwe": "CWE-400"
+    },
+    {
+      "pair_id": "44b7f486c0143f68b56c34e2d01e146ee445134a",
+      "vuln_idx": 195659,
+      "safe_idx": 230086,
+      "project": "tensorflow",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "e6a7c7cc18c3aaad1ae0872cb0a959f5c923d2bd",
+      "vuln_idx": 197715,
+      "safe_idx": 262772,
+      "project": "tensorflow",
+      "cwe": "CWE-476"
+    },
+    {
+      "pair_id": "1c2ef610358af33f9ded3086aa2d70aac03dcac5",
+      "vuln_idx": 202689,
+      "safe_idx": 337027,
+      "project": "ruby",
+      "cwe": "CWE-119"
+    },
+    {
+      "pair_id": "bf1713d9e011b55ca1f502a6779fc4722b4bb077",
+      "vuln_idx": 214241,
+      "safe_idx": 476899,
+      "project": "unicorn",
+      "cwe": "CWE-295"
+    },
+    {
+      "pair_id": "ce03ad7ef4e8aeefce79192bf5b6f69fae396f0c",
+      "vuln_idx": 207982,
+      "safe_idx": 404043,
+      "project": "libexif",
+      "cwe": "CWE-190"
+    },
+    {
+      "pair_id": "5ee24b398bb67666f6d173763eaaedd9c36fb1e5",
+      "vuln_idx": 199976,
+      "safe_idx": 296022,
+      "project": "leptonica",
+      "cwe": "CWE-125"
+    },
+    {
+      "pair_id": "ff7f30129f15f7a2213f8ced0cd65c9a331493d9",
+      "vuln_idx": 195966,
+      "safe_idx": 235766,
+      "project": "bfgminer",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "3e21f4af170bebf47c187c1ff8bf155583c9f3b1",
+      "vuln_idx": 211709,
+      "safe_idx": 450878,
+      "project": "linux",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "5a02583c7e683896d84878bd90641d8d9b0d0549",
+      "vuln_idx": 200109,
+      "safe_idx": 299179,
+      "project": "libxml2",
+      "cwe": "CWE-401"
+    },
+    {
+      "pair_id": "52c479697c9b73f628140dcdfcd39ea302d05482",
+      "vuln_idx": 202665,
+      "safe_idx": 336269,
+      "project": "linux",
+      "cwe": "CWE-416"
+    },
+    {
+      "pair_id": "801c1c6be5324219689c98e1bd3e0ca365ee834d",
+      "vuln_idx": 197892,
+      "safe_idx": 265428,
+      "project": "tensorflow",
+      "cwe": "CWE-369"
+    },
+    {
+      "pair_id": "a1c400eb2cff849c0e5f9d6916d69ffea3ad2c85",
+      "vuln_idx": 205562,
+      "safe_idx": 368106,
+      "project": "soundtouch",
+      "cwe": "CWE-617"
+    },
+    {
+      "pair_id": "6c0b2b70eeee588591680f5b7d5d38175fd7cdf6",
+      "vuln_idx": 195042,
+      "safe_idx": 220473,
+      "project": "tensorflow",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "0e62395da2bd5166d7c9e14cbc7503b256a34cb0",
+      "vuln_idx": 210708,
+      "safe_idx": 439536,
+      "project": "linux",
+      "cwe": "CWE-401"
+    },
+    {
+      "pair_id": "77ed81c069e10b3861d88f72e1c6be1277ee7eae",
+      "vuln_idx": 197993,
+      "safe_idx": 267899,
+      "project": "gpac",
+      "cwe": "CWE-787"
+    },
+    {
+      "pair_id": "dfa88369d4ca4290db56b843f9eabdae1bfe0fd5",
+      "vuln_idx": 205840,
+      "safe_idx": 373783,
+      "project": "rsyslog",
+      "cwe": "CWE-772"
+    }
+  ]
+}

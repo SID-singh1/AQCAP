@@ -1,0 +1,910 @@
+{
+  "split": "calib",
+  "dataset": "juliet",
+  "seed": 0,
+  "n_pairs": 100,
+  "n_samples": 200,
+  "source_file": "juliet_paired.jsonl",
+  "pairs": [
+    {
+      "pair_id": "juliet_222",
+      "vuln_idx": 223,
+      "safe_idx": 224,
+      "cwe": "CWE-404",
+      "project": "Juliet",
+      "filename": "testcases/CWE404_Improper_Resource_Shutdown/CWE404_Improper_Resource_Shutdown__freopen_w32CloseHandle_66b.c",
+      "base_testcase": "testcases/CWE404_Improper_Resource_Shutdown/CWE404_Improper_Resource_Shutdown__freopen_w32CloseHandle"
+    },
+    {
+      "pair_id": "juliet_5842",
+      "vuln_idx": 5843,
+      "safe_idx": 5844,
+      "cwe": "CWE-672",
+      "project": "Juliet",
+      "filename": "testcases/CWE672_Operation_on_Resource_After_Expiration_or_Release/CWE672_Operation_on_Resource_After_Expiration_or_Release__list_int_54b.cpp",
+      "base_testcase": "testcases/CWE672_Operation_on_Resource_After_Expiration_or_Release/CWE672_Operation_on_Resource_After_Expiration_or_Release__list_int"
+    },
+    {
+      "pair_id": "juliet_12782",
+      "vuln_idx": 12783,
+      "safe_idx": 12784,
+      "cwe": "CWE-328",
+      "project": "Juliet",
+      "filename": "testcases/CWE328_Reversible_One_Way_Hash/CWE328_Reversible_One_Way_Hash__w32_MD2_08.c",
+      "base_testcase": "testcases/CWE328_Reversible_One_Way_Hash/CWE328_Reversible_One_Way_Hash__w32_MD2_08.c"
+    },
+    {
+      "pair_id": "juliet_6238",
+      "vuln_idx": 6239,
+      "safe_idx": 6240,
+      "cwe": "CWE-121",
+      "project": "Juliet",
+      "filename": "testcases/CWE121_Stack_Based_Buffer_Overflow/s05/CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_snprintf_68b.c",
+      "base_testcase": "testcases/CWE121_Stack_Based_Buffer_Overflow/s05/CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_snprintf"
+    },
+    {
+      "pair_id": "juliet_25580",
+      "vuln_idx": 25581,
+      "safe_idx": 25582,
+      "cwe": "CWE-427",
+      "project": "Juliet",
+      "filename": "testcases/CWE427_Uncontrolled_Search_Path_Element/CWE427_Uncontrolled_Search_Path_Element__char_environment_72b.cpp",
+      "base_testcase": "testcases/CWE427_Uncontrolled_Search_Path_Element/CWE427_Uncontrolled_Search_Path_Element__char_environment"
+    },
+    {
+      "pair_id": "juliet_19342",
+      "vuln_idx": 19343,
+      "safe_idx": 19344,
+      "cwe": "CWE-416",
+      "project": "Juliet",
+      "filename": "testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char_62b.cpp",
+      "base_testcase": "testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_char"
+    },
+    {
+      "pair_id": "juliet_22178",
+      "vuln_idx": 22179,
+      "safe_idx": 22180,
+      "cwe": "CWE-680",
+      "project": "Juliet",
+      "filename": "testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_rand_54b.c",
+      "base_testcase": "testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_rand"
+    },
+    {
+      "pair_id": "juliet_23086",
+      "vuln_idx": 23087,
+      "safe_idx": 23088,
+      "cwe": "CWE-457",
+      "project": "Juliet",
+      "filename": "testcases/CWE457_Use_of_Uninitialized_Variable/s01/CWE457_Use_of_Uninitialized_Variable__double_array_declare_no_init_62b.cpp",
+      "base_testcase": "testcases/CWE457_Use_of_Uninitialized_Variable/s01/CWE457_Use_of_Uninitialized_Variable__double_array_declare_no_init"
+    },
+    {
+      "pair_id": "juliet_12300",
+      "vuln_idx": 12301,
+      "safe_idx": 12302,
+      "cwe": "CWE-761",
+      "project": "Juliet",
+      "filename": "testcases/CWE761_Free_Pointer_Not_at_Start_of_Buffer/CWE761_Free_Pointer_Not_at_Start_of_Buffer__wchar_t_console_64b.c",
+      "base_testcase": "testcases/CWE761_Free_Pointer_Not_at_Start_of_Buffer/CWE761_Free_Pointer_Not_at_Start_of_Buffer__wchar_t_console"
+    },
+    {
+      "pair_id": "juliet_12698",
+      "vuln_idx": 12699,
+      "safe_idx": 12700,
+      "cwe": "CWE-123",
+      "project": "Juliet",
+      "filename": "testcases/CWE123_Write_What_Where_Condition/CWE123_Write_What_Where_Condition__connect_socket_53b.c",
+      "base_testcase": "testcases/CWE123_Write_What_Where_Condition/CWE123_Write_What_Where_Condition__connect_socket"
+    },
+    {
+      "pair_id": "juliet_6090",
+      "vuln_idx": 6091,
+      "safe_idx": 6092,
+      "cwe": "CWE-506",
+      "project": "Juliet",
+      "filename": "testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__w32_file_attrib_created_08.c",
+      "base_testcase": "testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__w32_file_attrib_created_08.c"
+    },
+    {
+      "pair_id": "juliet_36760",
+      "vuln_idx": 36761,
+      "safe_idx": 36762,
+      "cwe": "CWE-762",
+      "project": "Juliet",
+      "filename": "testcases/CWE762_Mismatched_Memory_Management_Routines/s03/CWE762_Mismatched_Memory_Management_Routines__delete_int64_t_realloc_52c.cpp",
+      "base_testcase": "testcases/CWE762_Mismatched_Memory_Management_Routines/s03/CWE762_Mismatched_Memory_Management_Routines__delete_int64_t_realloc"
+    },
+    {
+      "pair_id": "juliet_22400",
+      "vuln_idx": 22401,
+      "safe_idx": 22402,
+      "cwe": "CWE-479",
+      "project": "Juliet",
+      "filename": "testcases/CWE479_Signal_Handler_Use_of_Non_Reentrant_Function/CWE479_Signal_Handler_Use_of_Non_Reentrant_Function__basic_08.c",
+      "base_testcase": "testcases/CWE479_Signal_Handler_Use_of_Non_Reentrant_Function/CWE479_Signal_Handler_Use_of_Non_Reentrant_Function__basic_08.c"
+    },
+    {
+      "pair_id": "juliet_12562",
+      "vuln_idx": 12563,
+      "safe_idx": 12564,
+      "cwe": "CWE-665",
+      "project": "Juliet",
+      "filename": "testcases/CWE665_Improper_Initialization/CWE665_Improper_Initialization__wchar_t_ncat_68b.c",
+      "base_testcase": "testcases/CWE665_Improper_Initialization/CWE665_Improper_Initialization__wchar_t_ncat"
+    },
+    {
+      "pair_id": "juliet_13124",
+      "vuln_idx": 13125,
+      "safe_idx": 13126,
+      "cwe": "CWE-401",
+      "project": "Juliet",
+      "filename": "testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__int_malloc_64b.c",
+      "base_testcase": "testcases/CWE401_Memory_Leak/s01/CWE401_Memory_Leak__int_malloc"
+    },
+    {
+      "pair_id": "juliet_37876",
+      "vuln_idx": 37877,
+      "safe_idx": 37878,
+      "cwe": "CWE-464",
+      "project": "Juliet",
+      "filename": "testcases/CWE464_Addition_of_Data_Structure_Sentinel/CWE464_Addition_of_Data_Structure_Sentinel__basic_73b.cpp",
+      "base_testcase": "testcases/CWE464_Addition_of_Data_Structure_Sentinel/CWE464_Addition_of_Data_Structure_Sentinel__basic"
+    },
+    {
+      "pair_id": "juliet_14456",
+      "vuln_idx": 14457,
+      "safe_idx": 14458,
+      "cwe": "CWE-114",
+      "project": "Juliet",
+      "filename": "testcases/CWE114_Process_Control/CWE114_Process_Control__w32_char_console_74b.cpp",
+      "base_testcase": "testcases/CWE114_Process_Control/CWE114_Process_Control__w32_char_console"
+    },
+    {
+      "pair_id": "juliet_6124",
+      "vuln_idx": 6125,
+      "safe_idx": 6126,
+      "cwe": "CWE-396",
+      "project": "Juliet",
+      "filename": "testcases/CWE396_Catch_Generic_Exception/CWE396_Catch_Generic_Exception__exception_and_domain_error_08.cpp",
+      "base_testcase": "testcases/CWE396_Catch_Generic_Exception/CWE396_Catch_Generic_Exception__exception_and_domain_error_08.cpp"
+    },
+    {
+      "pair_id": "juliet_12798",
+      "vuln_idx": 12799,
+      "safe_idx": 12800,
+      "cwe": "CWE-247",
+      "project": "Juliet",
+      "filename": "testcases/CWE247_Reliance_on_DNS_Lookups_in_Security_Decision/CWE247_Reliance_on_DNS_Lookups_in_Security_Decision__w32_08.c",
+      "base_testcase": "testcases/CWE247_Reliance_on_DNS_Lookups_in_Security_Decision/CWE247_Reliance_on_DNS_Lookups_in_Security_Decision__w32_08.c"
+    },
+    {
+      "pair_id": "juliet_3638",
+      "vuln_idx": 3639,
+      "safe_idx": 3640,
+      "cwe": "CWE-843",
+      "project": "Juliet",
+      "filename": "testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short_53b.c",
+      "base_testcase": "testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__short"
+    },
+    {
+      "pair_id": "juliet_4514",
+      "vuln_idx": 4515,
+      "safe_idx": 4516,
+      "cwe": "CWE-590",
+      "project": "Juliet",
+      "filename": "testcases/CWE590_Free_Memory_Not_on_Heap/s04/CWE590_Free_Memory_Not_on_Heap__delete_wchar_t_alloca_53c.cpp",
+      "base_testcase": "testcases/CWE590_Free_Memory_Not_on_Heap/s04/CWE590_Free_Memory_Not_on_Heap__delete_wchar_t_alloca"
+    },
+    {
+      "pair_id": "juliet_34224",
+      "vuln_idx": 34225,
+      "safe_idx": 34226,
+      "cwe": "CWE-191",
+      "project": "Juliet",
+      "filename": "testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__unsigned_int_fscanf_postdec_52c.c",
+      "base_testcase": "testcases/CWE191_Integer_Underflow/s04/CWE191_Integer_Underflow__unsigned_int_fscanf_postdec"
+    },
+    {
+      "pair_id": "juliet_5646",
+      "vuln_idx": 5647,
+      "safe_idx": 5648,
+      "cwe": "CWE-675",
+      "project": "Juliet",
+      "filename": "testcases/CWE675_Duplicate_Operations_on_Resource/CWE675_Duplicate_Operations_on_Resource__w32CreateFile_51b.c",
+      "base_testcase": "testcases/CWE675_Duplicate_Operations_on_Resource/CWE675_Duplicate_Operations_on_Resource__w32CreateFile"
+    },
+    {
+      "pair_id": "juliet_9360",
+      "vuln_idx": 9361,
+      "safe_idx": 9362,
+      "cwe": "CWE-90",
+      "project": "Juliet",
+      "filename": "testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__w32_char_console_08.c",
+      "base_testcase": "testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__w32_char_console_08.c"
+    },
+    {
+      "pair_id": "juliet_17512",
+      "vuln_idx": 17513,
+      "safe_idx": 17514,
+      "cwe": "CWE-124",
+      "project": "Juliet",
+      "filename": "testcases/CWE124_Buffer_Underwrite/s01/CWE124_Buffer_Underwrite__char_declare_memcpy_54d.c",
+      "base_testcase": "testcases/CWE124_Buffer_Underwrite/s01/CWE124_Buffer_Underwrite__char_declare_memcpy"
+    },
+    {
+      "pair_id": "juliet_30980",
+      "vuln_idx": 30981,
+      "safe_idx": 30982,
+      "cwe": "CWE-415",
+      "project": "Juliet",
+      "filename": "testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t_52c.c",
+      "base_testcase": "testcases/CWE415_Double_Free/s01/CWE415_Double_Free__malloc_free_int64_t"
+    },
+    {
+      "pair_id": "juliet_5764",
+      "vuln_idx": 5765,
+      "safe_idx": 5766,
+      "cwe": "CWE-284",
+      "project": "Juliet",
+      "filename": "testcases/CWE284_Improper_Access_Control/CWE284_Improper_Access_Control__w32_char_SHRegCreateUSKey_08.c",
+      "base_testcase": "testcases/CWE284_Improper_Access_Control/CWE284_Improper_Access_Control__w32_char_SHRegCreateUSKey_08.c"
+    },
+    {
+      "pair_id": "juliet_14058",
+      "vuln_idx": 14059,
+      "safe_idx": 14060,
+      "cwe": "CWE-253",
+      "project": "Juliet",
+      "filename": "testcases/CWE253_Incorrect_Check_of_Function_Return_Value/CWE253_Incorrect_Check_of_Function_Return_Value__char_fwrite_08.c",
+      "base_testcase": "testcases/CWE253_Incorrect_Check_of_Function_Return_Value/CWE253_Incorrect_Check_of_Function_Return_Value__char_fwrite_08.c"
+    },
+    {
+      "pair_id": "juliet_34",
+      "vuln_idx": 35,
+      "safe_idx": 36,
+      "cwe": "CWE-591",
+      "project": "Juliet",
+      "filename": "testcases/CWE591_Sensitive_Data_Storage_in_Improperly_Locked_Memory/CWE591_Sensitive_Data_Storage_in_Improperly_Locked_Memory__w32_char_54d.c",
+      "base_testcase": "testcases/CWE591_Sensitive_Data_Storage_in_Improperly_Locked_Memory/CWE591_Sensitive_Data_Storage_in_Improperly_Locked_Memory__w32_char"
+    },
+    {
+      "pair_id": "juliet_37850",
+      "vuln_idx": 37851,
+      "safe_idx": 37852,
+      "cwe": "CWE-758",
+      "project": "Juliet",
+      "filename": "testcases/CWE758_Undefined_Behavior/CWE758_Undefined_Behavior__int64_t_new_use_08.cpp",
+      "base_testcase": "testcases/CWE758_Undefined_Behavior/CWE758_Undefined_Behavior__int64_t_new_use_08.cpp"
+    },
+    {
+      "pair_id": "juliet_39616",
+      "vuln_idx": 39617,
+      "safe_idx": 39618,
+      "cwe": "CWE-369",
+      "project": "Juliet",
+      "filename": "testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_fgets_68b.c",
+      "base_testcase": "testcases/CWE369_Divide_by_Zero/s01/CWE369_Divide_by_Zero__float_fgets"
+    },
+    {
+      "pair_id": "juliet_22344",
+      "vuln_idx": 22345,
+      "safe_idx": 22346,
+      "cwe": "CWE-327",
+      "project": "Juliet",
+      "filename": "testcases/CWE327_Use_Broken_Crypto/CWE327_Use_Broken_Crypto__w32_RC5_08.c",
+      "base_testcase": "testcases/CWE327_Use_Broken_Crypto/CWE327_Use_Broken_Crypto__w32_RC5_08.c"
+    },
+    {
+      "pair_id": "juliet_13950",
+      "vuln_idx": 13951,
+      "safe_idx": 13952,
+      "cwe": "CWE-259",
+      "project": "Juliet",
+      "filename": "testcases/CWE259_Hard_Coded_Password/CWE259_Hard_Coded_Password__w32_char_66b.c",
+      "base_testcase": "testcases/CWE259_Hard_Coded_Password/CWE259_Hard_Coded_Password__w32_char"
+    },
+    {
+      "pair_id": "juliet_3658",
+      "vuln_idx": 3659,
+      "safe_idx": 3660,
+      "cwe": "CWE-588",
+      "project": "Juliet",
+      "filename": "testcases/CWE588_Attempt_to_Access_Child_of_Non_Structure_Pointer/CWE588_Attempt_to_Access_Child_of_Non_Structure_Pointer__struct_66b.c",
+      "base_testcase": "testcases/CWE588_Attempt_to_Access_Child_of_Non_Structure_Pointer/CWE588_Attempt_to_Access_Child_of_Non_Structure_Pointer__struct"
+    },
+    {
+      "pair_id": "juliet_40280",
+      "vuln_idx": 40281,
+      "safe_idx": 40282,
+      "cwe": "CWE-321",
+      "project": "Juliet",
+      "filename": "testcases/CWE321_Hard_Coded_Cryptographic_Key/CWE321_Hard_Coded_Cryptographic_Key__w32_wchar_t_74b.cpp",
+      "base_testcase": "testcases/CWE321_Hard_Coded_Cryptographic_Key/CWE321_Hard_Coded_Cryptographic_Key__w32_wchar_t"
+    },
+    {
+      "pair_id": "juliet_5966",
+      "vuln_idx": 5967,
+      "safe_idx": 5968,
+      "cwe": "CWE-476",
+      "project": "Juliet",
+      "filename": "testcases/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char_52b.c",
+      "base_testcase": "testcases/CWE476_NULL_Pointer_Dereference/CWE476_NULL_Pointer_Dereference__char"
+    },
+    {
+      "pair_id": "juliet_32348",
+      "vuln_idx": 32349,
+      "safe_idx": 32350,
+      "cwe": "CWE-23",
+      "project": "Juliet",
+      "filename": "testcases/CWE23_Relative_Path_Traversal/s04/CWE23_Relative_Path_Traversal__wchar_t_listen_socket_ofstream_66b.cpp",
+      "base_testcase": "testcases/CWE23_Relative_Path_Traversal/s04/CWE23_Relative_Path_Traversal__wchar_t_listen_socket_ofstream"
+    },
+    {
+      "pair_id": "juliet_30752",
+      "vuln_idx": 30753,
+      "safe_idx": 30754,
+      "cwe": "CWE-400",
+      "project": "Juliet",
+      "filename": "testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__listen_socket_sleep_65b.c",
+      "base_testcase": "testcases/CWE400_Resource_Exhaustion/s02/CWE400_Resource_Exhaustion__listen_socket_sleep"
+    },
+    {
+      "pair_id": "juliet_39496",
+      "vuln_idx": 39497,
+      "safe_idx": 39498,
+      "cwe": "CWE-773",
+      "project": "Juliet",
+      "filename": "testcases/CWE773_Missing_Reference_to_Active_File_Descriptor_or_Handle/CWE773_Missing_Reference_to_Active_File_Descriptor_or_Handle__fopen_74b.cpp",
+      "base_testcase": "testcases/CWE773_Missing_Reference_to_Active_File_Descriptor_or_Handle/CWE773_Missing_Reference_to_Active_File_Descriptor_or_Handle__fopen"
+    },
+    {
+      "pair_id": "juliet_21984",
+      "vuln_idx": 21985,
+      "safe_idx": 21986,
+      "cwe": "CWE-459",
+      "project": "Juliet",
+      "filename": "testcases/CWE459_Incomplete_Cleanup/CWE459_Incomplete_Cleanup__char_08.c",
+      "base_testcase": "testcases/CWE459_Incomplete_Cleanup/CWE459_Incomplete_Cleanup__char_08.c"
+    },
+    {
+      "pair_id": "juliet_9882",
+      "vuln_idx": 9883,
+      "safe_idx": 9884,
+      "cwe": "CWE-426",
+      "project": "Juliet",
+      "filename": "testcases/CWE426_Untrusted_Search_Path/CWE426_Untrusted_Search_Path__wchar_t_popen_62b.cpp",
+      "base_testcase": "testcases/CWE426_Untrusted_Search_Path/CWE426_Untrusted_Search_Path__wchar_t_popen"
+    },
+    {
+      "pair_id": "juliet_9986",
+      "vuln_idx": 9987,
+      "safe_idx": 9988,
+      "cwe": "CWE-606",
+      "project": "Juliet",
+      "filename": "testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__wchar_t_environment_53b.c",
+      "base_testcase": "testcases/CWE606_Unchecked_Loop_Condition/CWE606_Unchecked_Loop_Condition__wchar_t_environment"
+    },
+    {
+      "pair_id": "juliet_37924",
+      "vuln_idx": 37925,
+      "safe_idx": 37926,
+      "cwe": "CWE-511",
+      "project": "Juliet",
+      "filename": "testcases/CWE511_Logic_Time_Bomb/CWE511_Logic_Time_Bomb__time_08.c",
+      "base_testcase": "testcases/CWE511_Logic_Time_Bomb/CWE511_Logic_Time_Bomb__time_08.c"
+    },
+    {
+      "pair_id": "juliet_13878",
+      "vuln_idx": 13879,
+      "safe_idx": 13880,
+      "cwe": "CWE-534",
+      "project": "Juliet",
+      "filename": "testcases/CWE534_Info_Exposure_Debug_Log/CWE534_Info_Exposure_Debug_Log__w32_char_08.c",
+      "base_testcase": "testcases/CWE534_Info_Exposure_Debug_Log/CWE534_Info_Exposure_Debug_Log__w32_char_08.c"
+    },
+    {
+      "pair_id": "juliet_10986",
+      "vuln_idx": 10987,
+      "safe_idx": 10988,
+      "cwe": "CWE-617",
+      "project": "Juliet",
+      "filename": "testcases/CWE617_Reachable_Assertion/CWE617_Reachable_Assertion__fgets_68b.c",
+      "base_testcase": "testcases/CWE617_Reachable_Assertion/CWE617_Reachable_Assertion__fgets"
+    },
+    {
+      "pair_id": "juliet_40256",
+      "vuln_idx": 40257,
+      "safe_idx": 40258,
+      "cwe": "CWE-319",
+      "project": "Juliet",
+      "filename": "testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__w32_wchar_t_connect_socket_52b.c",
+      "base_testcase": "testcases/CWE319_Cleartext_Tx_Sensitive_Info/CWE319_Cleartext_Tx_Sensitive_Info__w32_wchar_t_connect_socket"
+    },
+    {
+      "pair_id": "juliet_10400",
+      "vuln_idx": 10401,
+      "safe_idx": 10402,
+      "cwe": "CWE-690",
+      "project": "Juliet",
+      "filename": "testcases/CWE690_NULL_Deref_From_Return/s01/CWE690_NULL_Deref_From_Return__char_malloc_65b.c",
+      "base_testcase": "testcases/CWE690_NULL_Deref_From_Return/s01/CWE690_NULL_Deref_From_Return__char_malloc"
+    },
+    {
+      "pair_id": "juliet_23916",
+      "vuln_idx": 23917,
+      "safe_idx": 23918,
+      "cwe": "CWE-789",
+      "project": "Juliet",
+      "filename": "testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__new_wchar_t_listen_socket_62b.cpp",
+      "base_testcase": "testcases/CWE789_Uncontrolled_Mem_Alloc/s02/CWE789_Uncontrolled_Mem_Alloc__new_wchar_t_listen_socket"
+    },
+    {
+      "pair_id": "juliet_3822",
+      "vuln_idx": 3823,
+      "safe_idx": 3824,
+      "cwe": "CWE-398",
+      "project": "Juliet",
+      "filename": "testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__empty_if_08.c",
+      "base_testcase": "testcases/CWE398_Poor_Code_Quality/CWE398_Poor_Code_Quality__empty_if_08.c"
+    },
+    {
+      "pair_id": "juliet_2612",
+      "vuln_idx": 2613,
+      "safe_idx": 2614,
+      "cwe": "CWE-78",
+      "project": "Juliet",
+      "filename": "testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_environment_w32_execv_72b.cpp",
+      "base_testcase": "testcases/CWE78_OS_Command_Injection/s03/CWE78_OS_Command_Injection__char_environment_w32_execv"
+    },
+    {
+      "pair_id": "juliet_24098",
+      "vuln_idx": 24099,
+      "safe_idx": 24100,
+      "cwe": "CWE-475",
+      "project": "Juliet",
+      "filename": "testcases/CWE475_Undefined_Behavior_for_Input_to_API/CWE475_Undefined_Behavior_for_Input_to_API__char_08.c",
+      "base_testcase": "testcases/CWE475_Undefined_Behavior_for_Input_to_API/CWE475_Undefined_Behavior_for_Input_to_API__char_08.c"
+    },
+    {
+      "pair_id": "juliet_25778",
+      "vuln_idx": 25779,
+      "safe_idx": 25780,
+      "cwe": "CWE-391",
+      "project": "Juliet",
+      "filename": "testcases/CWE391_Unchecked_Error_Condition/CWE391_Unchecked_Error_Condition__wcstombs_08.c",
+      "base_testcase": "testcases/CWE391_Unchecked_Error_Condition/CWE391_Unchecked_Error_Condition__wcstombs_08.c"
+    },
+    {
+      "pair_id": "juliet_30890",
+      "vuln_idx": 30891,
+      "safe_idx": 30892,
+      "cwe": "CWE-366",
+      "project": "Juliet",
+      "filename": "testcases/CWE366_Race_Condition_Within_Thread/CWE366_Race_Condition_Within_Thread__global_int_13.c",
+      "base_testcase": "testcases/CWE366_Race_Condition_Within_Thread/CWE366_Race_Condition_Within_Thread__global_int_13.c"
+    },
+    {
+      "pair_id": "juliet_39520",
+      "vuln_idx": 39521,
+      "safe_idx": 39522,
+      "cwe": "CWE-467",
+      "project": "Juliet",
+      "filename": "testcases/CWE467_Use_of_sizeof_on_Pointer_Type/CWE467_Use_of_sizeof_on_Pointer_Type__char_08.c",
+      "base_testcase": "testcases/CWE467_Use_of_sizeof_on_Pointer_Type/CWE467_Use_of_sizeof_on_Pointer_Type__char_08.c"
+    },
+    {
+      "pair_id": "juliet_24130",
+      "vuln_idx": 24131,
+      "safe_idx": 24132,
+      "cwe": "CWE-377",
+      "project": "Juliet",
+      "filename": "testcases/CWE377_Insecure_Temporary_File/CWE377_Insecure_Temporary_File__char_tmpnam_01.c",
+      "base_testcase": "testcases/CWE377_Insecure_Temporary_File/CWE377_Insecure_Temporary_File__char_tmpnam_01.c"
+    },
+    {
+      "pair_id": "juliet_15968",
+      "vuln_idx": 15969,
+      "safe_idx": 15970,
+      "cwe": "CWE-134",
+      "project": "Juliet",
+      "filename": "testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vfprintf_51b.c",
+      "base_testcase": "testcases/CWE134_Uncontrolled_Format_String/s02/CWE134_Uncontrolled_Format_String__char_environment_vfprintf"
+    },
+    {
+      "pair_id": "juliet_11168",
+      "vuln_idx": 11169,
+      "safe_idx": 11170,
+      "cwe": "CWE-126",
+      "project": "Juliet",
+      "filename": "testcases/CWE126_Buffer_Overread/s01/CWE126_Buffer_Overread__CWE129_connect_socket_64b.c",
+      "base_testcase": "testcases/CWE126_Buffer_Overread/s01/CWE126_Buffer_Overread__CWE129_connect_socket"
+    },
+    {
+      "pair_id": "juliet_38580",
+      "vuln_idx": 38581,
+      "safe_idx": 38582,
+      "cwe": "CWE-36",
+      "project": "Juliet",
+      "filename": "testcases/CWE36_Absolute_Path_Traversal/s04/CWE36_Absolute_Path_Traversal__wchar_t_environment_open_74b.cpp",
+      "base_testcase": "testcases/CWE36_Absolute_Path_Traversal/s04/CWE36_Absolute_Path_Traversal__wchar_t_environment_open"
+    },
+    {
+      "pair_id": "juliet_12770",
+      "vuln_idx": 12771,
+      "safe_idx": 12772,
+      "cwe": "CWE-390",
+      "project": "Juliet",
+      "filename": "testcases/CWE390_Error_Without_Action/CWE390_Error_Without_Action__fgets_wchar_t_08.c",
+      "base_testcase": "testcases/CWE390_Error_Without_Action/CWE390_Error_Without_Action__fgets_wchar_t_08.c"
+    },
+    {
+      "pair_id": "juliet_37972",
+      "vuln_idx": 37973,
+      "safe_idx": 37974,
+      "cwe": "CWE-666",
+      "project": "Juliet",
+      "filename": "testcases/CWE666_Operation_on_Resource_in_Wrong_Phase_of_Lifetime/CWE666_Operation_on_Resource_in_Wrong_Phase_of_Lifetime__bind_accept_listen_08.c",
+      "base_testcase": "testcases/CWE666_Operation_on_Resource_in_Wrong_Phase_of_Lifetime/CWE666_Operation_on_Resource_in_Wrong_Phase_of_Lifetime__bind_accept_listen_08.c"
+    },
+    {
+      "pair_id": "juliet_24458",
+      "vuln_idx": 24459,
+      "safe_idx": 24460,
+      "cwe": "CWE-127",
+      "project": "Juliet",
+      "filename": "testcases/CWE127_Buffer_Underread/s01/CWE127_Buffer_Underread__CWE839_fgets_61b.c",
+      "base_testcase": "testcases/CWE127_Buffer_Underread/s01/CWE127_Buffer_Underread__CWE839_fgets"
+    },
+    {
+      "pair_id": "juliet_19092",
+      "vuln_idx": 19093,
+      "safe_idx": 19094,
+      "cwe": "CWE-563",
+      "project": "Juliet",
+      "filename": "testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_value_int64_t_08.c",
+      "base_testcase": "testcases/CWE563_Unused_Variable/CWE563_Unused_Variable__unused_value_int64_t_08.c"
+    },
+    {
+      "pair_id": "juliet_17196",
+      "vuln_idx": 17197,
+      "safe_idx": 17198,
+      "cwe": "CWE-194",
+      "project": "Juliet",
+      "filename": "testcases/CWE194_Unexpected_Sign_Extension/s02/CWE194_Unexpected_Sign_Extension__rand_memcpy_54c.c",
+      "base_testcase": "testcases/CWE194_Unexpected_Sign_Extension/s02/CWE194_Unexpected_Sign_Extension__rand_memcpy"
+    },
+    {
+      "pair_id": "juliet_22406",
+      "vuln_idx": 22407,
+      "safe_idx": 22408,
+      "cwe": "CWE-197",
+      "project": "Juliet",
+      "filename": "testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_fscanf_to_short_68b.c",
+      "base_testcase": "testcases/CWE197_Numeric_Truncation_Error/s01/CWE197_Numeric_Truncation_Error__int_fscanf_to_short"
+    },
+    {
+      "pair_id": "juliet_14650",
+      "vuln_idx": 14651,
+      "safe_idx": 14652,
+      "cwe": "CWE-15",
+      "project": "Juliet",
+      "filename": "testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__w32_66b.c",
+      "base_testcase": "testcases/CWE15_External_Control_of_System_or_Configuration_Setting/CWE15_External_Control_of_System_or_Configuration_Setting__w32"
+    },
+    {
+      "pair_id": "juliet_9812",
+      "vuln_idx": 9813,
+      "safe_idx": 9814,
+      "cwe": "CWE-176",
+      "project": "Juliet",
+      "filename": "testcases/CWE176_Improper_Handling_of_Unicode_Encoding/CWE176_Improper_Handling_of_Unicode_Encoding__w32_73b.cpp",
+      "base_testcase": "testcases/CWE176_Improper_Handling_of_Unicode_Encoding/CWE176_Improper_Handling_of_Unicode_Encoding__w32"
+    },
+    {
+      "pair_id": "juliet_26196",
+      "vuln_idx": 26197,
+      "safe_idx": 26198,
+      "cwe": "CWE-195",
+      "project": "Juliet",
+      "filename": "testcases/CWE195_Signed_to_Unsigned_Conversion_Error/s02/CWE195_Signed_to_Unsigned_Conversion_Error__rand_malloc_52b.c",
+      "base_testcase": "testcases/CWE195_Signed_to_Unsigned_Conversion_Error/s02/CWE195_Signed_to_Unsigned_Conversion_Error__rand_malloc"
+    },
+    {
+      "pair_id": "juliet_502",
+      "vuln_idx": 503,
+      "safe_idx": 504,
+      "cwe": "CWE-775",
+      "project": "Juliet",
+      "filename": "testcases/CWE775_Missing_Release_of_File_Descriptor_or_Handle/CWE775_Missing_Release_of_File_Descriptor_or_Handle__open_no_close_73b.cpp",
+      "base_testcase": "testcases/CWE775_Missing_Release_of_File_Descriptor_or_Handle/CWE775_Missing_Release_of_File_Descriptor_or_Handle__open_no_close"
+    },
+    {
+      "pair_id": "juliet_28940",
+      "vuln_idx": 28941,
+      "safe_idx": 28942,
+      "cwe": "CWE-122",
+      "project": "Juliet",
+      "filename": "testcases/CWE122_Heap_Based_Buffer_Overflow/s10/CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cat_08.c",
+      "base_testcase": "testcases/CWE122_Heap_Based_Buffer_Overflow/s10/CWE122_Heap_Based_Buffer_Overflow__c_src_wchar_t_cat_08.c"
+    },
+    {
+      "pair_id": "juliet_9682",
+      "vuln_idx": 9683,
+      "safe_idx": 9684,
+      "cwe": "CWE-252",
+      "project": "Juliet",
+      "filename": "testcases/CWE252_Unchecked_Return_Value/CWE252_Unchecked_Return_Value__char_fputc_08.c",
+      "base_testcase": "testcases/CWE252_Unchecked_Return_Value/CWE252_Unchecked_Return_Value__char_fputc_08.c"
+    },
+    {
+      "pair_id": "juliet_19896",
+      "vuln_idx": 19897,
+      "safe_idx": 19898,
+      "cwe": "CWE-190",
+      "project": "Juliet",
+      "filename": "testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_add_62b.cpp",
+      "base_testcase": "testcases/CWE190_Integer_Overflow/s01/CWE190_Integer_Overflow__char_fscanf_add"
+    },
+    {
+      "pair_id": "juliet_14624",
+      "vuln_idx": 14625,
+      "safe_idx": 14626,
+      "cwe": "CWE-667",
+      "project": "Juliet",
+      "filename": "testcases/CWE667_Improper_Locking/CWE667_Improper_Locking__basic_08.c",
+      "base_testcase": "testcases/CWE667_Improper_Locking/CWE667_Improper_Locking__basic_08.c"
+    },
+    {
+      "pair_id": "juliet_14736",
+      "vuln_idx": 14737,
+      "safe_idx": 14738,
+      "cwe": "CWE-272",
+      "project": "Juliet",
+      "filename": "testcases/CWE272_Least_Privilege_Violation/CWE272_Least_Privilege_Violation__w32_char_CreateProcessAsUser_08.c",
+      "base_testcase": "testcases/CWE272_Least_Privilege_Violation/CWE272_Least_Privilege_Violation__w32_char_CreateProcessAsUser_08.c"
+    },
+    {
+      "pair_id": "juliet_12580",
+      "vuln_idx": 12581,
+      "safe_idx": 12582,
+      "cwe": "CWE-256",
+      "project": "Juliet",
+      "filename": "testcases/CWE256_Plaintext_Storage_of_Password/CWE256_Plaintext_Storage_of_Password__w32_wchar_t_53c.c",
+      "base_testcase": "testcases/CWE256_Plaintext_Storage_of_Password/CWE256_Plaintext_Storage_of_Password__w32_wchar_t"
+    },
+    {
+      "pair_id": "juliet_174",
+      "vuln_idx": 175,
+      "safe_idx": 176,
+      "cwe": "CWE-404",
+      "project": "Juliet",
+      "filename": "testcases/CWE404_Improper_Resource_Shutdown/CWE404_Improper_Resource_Shutdown__freopen_w32_close_68b.c",
+      "base_testcase": "testcases/CWE404_Improper_Resource_Shutdown/CWE404_Improper_Resource_Shutdown__freopen_w32_close"
+    },
+    {
+      "pair_id": "juliet_12776",
+      "vuln_idx": 12777,
+      "safe_idx": 12778,
+      "cwe": "CWE-328",
+      "project": "Juliet",
+      "filename": "testcases/CWE328_Reversible_One_Way_Hash/CWE328_Reversible_One_Way_Hash__w32_MD5_08.c",
+      "base_testcase": "testcases/CWE328_Reversible_One_Way_Hash/CWE328_Reversible_One_Way_Hash__w32_MD5_08.c"
+    },
+    {
+      "pair_id": "juliet_6168",
+      "vuln_idx": 6169,
+      "safe_idx": 6170,
+      "cwe": "CWE-121",
+      "project": "Juliet",
+      "filename": "testcases/CWE121_Stack_Based_Buffer_Overflow/s05/CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_ncat_68b.c",
+      "base_testcase": "testcases/CWE121_Stack_Based_Buffer_Overflow/s05/CWE121_Stack_Based_Buffer_Overflow__CWE805_wchar_t_alloca_ncat"
+    },
+    {
+      "pair_id": "juliet_25758",
+      "vuln_idx": 25759,
+      "safe_idx": 25760,
+      "cwe": "CWE-427",
+      "project": "Juliet",
+      "filename": "testcases/CWE427_Uncontrolled_Search_Path_Element/CWE427_Uncontrolled_Search_Path_Element__wchar_t_connect_socket_08.c",
+      "base_testcase": "testcases/CWE427_Uncontrolled_Search_Path_Element/CWE427_Uncontrolled_Search_Path_Element__wchar_t_connect_socket_08.c"
+    },
+    {
+      "pair_id": "juliet_19388",
+      "vuln_idx": 19389,
+      "safe_idx": 19390,
+      "cwe": "CWE-416",
+      "project": "Juliet",
+      "filename": "testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_wchar_t_08.cpp",
+      "base_testcase": "testcases/CWE416_Use_After_Free/CWE416_Use_After_Free__new_delete_array_wchar_t_08.cpp"
+    },
+    {
+      "pair_id": "juliet_22214",
+      "vuln_idx": 22215,
+      "safe_idx": 22216,
+      "cwe": "CWE-680",
+      "project": "Juliet",
+      "filename": "testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket_68b.c",
+      "base_testcase": "testcases/CWE680_Integer_Overflow_to_Buffer_Overflow/CWE680_Integer_Overflow_to_Buffer_Overflow__malloc_connect_socket"
+    },
+    {
+      "pair_id": "juliet_23206",
+      "vuln_idx": 23207,
+      "safe_idx": 23208,
+      "cwe": "CWE-457",
+      "project": "Juliet",
+      "filename": "testcases/CWE457_Use_of_Uninitialized_Variable/s01/CWE457_Use_of_Uninitialized_Variable__int_array_malloc_partial_init_62b.cpp",
+      "base_testcase": "testcases/CWE457_Use_of_Uninitialized_Variable/s01/CWE457_Use_of_Uninitialized_Variable__int_array_malloc_partial_init"
+    },
+    {
+      "pair_id": "juliet_12246",
+      "vuln_idx": 12247,
+      "safe_idx": 12248,
+      "cwe": "CWE-761",
+      "project": "Juliet",
+      "filename": "testcases/CWE761_Free_Pointer_Not_at_Start_of_Buffer/CWE761_Free_Pointer_Not_at_Start_of_Buffer__wchar_t_file_66b.c",
+      "base_testcase": "testcases/CWE761_Free_Pointer_Not_at_Start_of_Buffer/CWE761_Free_Pointer_Not_at_Start_of_Buffer__wchar_t_file"
+    },
+    {
+      "pair_id": "juliet_12666",
+      "vuln_idx": 12667,
+      "safe_idx": 12668,
+      "cwe": "CWE-123",
+      "project": "Juliet",
+      "filename": "testcases/CWE123_Write_What_Where_Condition/CWE123_Write_What_Where_Condition__fgets_22b.c",
+      "base_testcase": "testcases/CWE123_Write_What_Where_Condition/CWE123_Write_What_Where_Condition__fgets"
+    },
+    {
+      "pair_id": "juliet_6094",
+      "vuln_idx": 6095,
+      "safe_idx": 6096,
+      "cwe": "CWE-506",
+      "project": "Juliet",
+      "filename": "testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__file_transfer_listen_socket_08.c",
+      "base_testcase": "testcases/CWE506_Embedded_Malicious_Code/CWE506_Embedded_Malicious_Code__file_transfer_listen_socket_08.c"
+    },
+    {
+      "pair_id": "juliet_36204",
+      "vuln_idx": 36205,
+      "safe_idx": 36206,
+      "cwe": "CWE-762",
+      "project": "Juliet",
+      "filename": "testcases/CWE762_Mismatched_Memory_Management_Routines/s02/CWE762_Mismatched_Memory_Management_Routines__delete_array_struct_malloc_68b.cpp",
+      "base_testcase": "testcases/CWE762_Mismatched_Memory_Management_Routines/s02/CWE762_Mismatched_Memory_Management_Routines__delete_array_struct_malloc"
+    },
+    {
+      "pair_id": "juliet_22398",
+      "vuln_idx": 22399,
+      "safe_idx": 22400,
+      "cwe": "CWE-479",
+      "project": "Juliet",
+      "filename": "testcases/CWE479_Signal_Handler_Use_of_Non_Reentrant_Function/CWE479_Signal_Handler_Use_of_Non_Reentrant_Function__basic_15.c",
+      "base_testcase": "testcases/CWE479_Signal_Handler_Use_of_Non_Reentrant_Function/CWE479_Signal_Handler_Use_of_Non_Reentrant_Function__basic_15.c"
+    },
+    {
+      "pair_id": "juliet_12472",
+      "vuln_idx": 12473,
+      "safe_idx": 12474,
+      "cwe": "CWE-665",
+      "project": "Juliet",
+      "filename": "testcases/CWE665_Improper_Initialization/CWE665_Improper_Initialization__char_cat_54c.c",
+      "base_testcase": "testcases/CWE665_Improper_Initialization/CWE665_Improper_Initialization__char_cat"
+    },
+    {
+      "pair_id": "juliet_13440",
+      "vuln_idx": 13441,
+      "safe_idx": 13442,
+      "cwe": "CWE-401",
+      "project": "Juliet",
+      "filename": "testcases/CWE401_Memory_Leak/s02/CWE401_Memory_Leak__new_TwoIntsClass_53d.cpp",
+      "base_testcase": "testcases/CWE401_Memory_Leak/s02/CWE401_Memory_Leak__new_TwoIntsClass"
+    },
+    {
+      "pair_id": "juliet_14440",
+      "vuln_idx": 14441,
+      "safe_idx": 14442,
+      "cwe": "CWE-114",
+      "project": "Juliet",
+      "filename": "testcases/CWE114_Process_Control/CWE114_Process_Control__w32_wchar_t_environment_72b.cpp",
+      "base_testcase": "testcases/CWE114_Process_Control/CWE114_Process_Control__w32_wchar_t_environment"
+    },
+    {
+      "pair_id": "juliet_3650",
+      "vuln_idx": 3651,
+      "safe_idx": 3652,
+      "cwe": "CWE-843",
+      "project": "Juliet",
+      "filename": "testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char_54d.c",
+      "base_testcase": "testcases/CWE843_Type_Confusion/CWE843_Type_Confusion__char"
+    },
+    {
+      "pair_id": "juliet_3846",
+      "vuln_idx": 3847,
+      "safe_idx": 3848,
+      "cwe": "CWE-590",
+      "project": "Juliet",
+      "filename": "testcases/CWE590_Free_Memory_Not_on_Heap/s05/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static_54b.c",
+      "base_testcase": "testcases/CWE590_Free_Memory_Not_on_Heap/s05/CWE590_Free_Memory_Not_on_Heap__free_wchar_t_static"
+    },
+    {
+      "pair_id": "juliet_34906",
+      "vuln_idx": 34907,
+      "safe_idx": 34908,
+      "cwe": "CWE-191",
+      "project": "Juliet",
+      "filename": "testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_rand_sub_67b.c",
+      "base_testcase": "testcases/CWE191_Integer_Underflow/s03/CWE191_Integer_Underflow__short_rand_sub"
+    },
+    {
+      "pair_id": "juliet_5638",
+      "vuln_idx": 5639,
+      "safe_idx": 5640,
+      "cwe": "CWE-675",
+      "project": "Juliet",
+      "filename": "testcases/CWE675_Duplicate_Operations_on_Resource/CWE675_Duplicate_Operations_on_Resource__w32CreateFile_08.c",
+      "base_testcase": "testcases/CWE675_Duplicate_Operations_on_Resource/CWE675_Duplicate_Operations_on_Resource__w32CreateFile_08.c"
+    },
+    {
+      "pair_id": "juliet_9356",
+      "vuln_idx": 9357,
+      "safe_idx": 9358,
+      "cwe": "CWE-90",
+      "project": "Juliet",
+      "filename": "testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__w32_wchar_t_connect_socket_74b.cpp",
+      "base_testcase": "testcases/CWE90_LDAP_Injection/CWE90_LDAP_Injection__w32_wchar_t_connect_socket"
+    },
+    {
+      "pair_id": "juliet_18712",
+      "vuln_idx": 18713,
+      "safe_idx": 18714,
+      "cwe": "CWE-124",
+      "project": "Juliet",
+      "filename": "testcases/CWE124_Buffer_Underwrite/s03/CWE124_Buffer_Underwrite__new_char_memcpy_53c.cpp",
+      "base_testcase": "testcases/CWE124_Buffer_Underwrite/s03/CWE124_Buffer_Underwrite__new_char_memcpy"
+    },
+    {
+      "pair_id": "juliet_30938",
+      "vuln_idx": 30939,
+      "safe_idx": 30940,
+      "cwe": "CWE-415",
+      "project": "Juliet",
+      "filename": "testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int_52c.cpp",
+      "base_testcase": "testcases/CWE415_Double_Free/s01/CWE415_Double_Free__new_delete_array_int"
+    },
+    {
+      "pair_id": "juliet_5796",
+      "vuln_idx": 5797,
+      "safe_idx": 5798,
+      "cwe": "CWE-284",
+      "project": "Juliet",
+      "filename": "testcases/CWE284_Improper_Access_Control/CWE284_Improper_Access_Control__w32_wchar_t_SHRegCreateUSKey_08.c",
+      "base_testcase": "testcases/CWE284_Improper_Access_Control/CWE284_Improper_Access_Control__w32_wchar_t_SHRegCreateUSKey_08.c"
+    },
+    {
+      "pair_id": "juliet_14214",
+      "vuln_idx": 14215,
+      "safe_idx": 14216,
+      "cwe": "CWE-253",
+      "project": "Juliet",
+      "filename": "testcases/CWE253_Incorrect_Check_of_Function_Return_Value/CWE253_Incorrect_Check_of_Function_Return_Value__wchar_t_scanf_08.c",
+      "base_testcase": "testcases/CWE253_Incorrect_Check_of_Function_Return_Value/CWE253_Incorrect_Check_of_Function_Return_Value__wchar_t_scanf_08.c"
+    },
+    {
+      "pair_id": "juliet_42",
+      "vuln_idx": 43,
+      "safe_idx": 44,
+      "cwe": "CWE-591",
+      "project": "Juliet",
+      "filename": "testcases/CWE591_Sensitive_Data_Storage_in_Improperly_Locked_Memory/CWE591_Sensitive_Data_Storage_in_Improperly_Locked_Memory__w32_wchar_t_74b.cpp",
+      "base_testcase": "testcases/CWE591_Sensitive_Data_Storage_in_Improperly_Locked_Memory/CWE591_Sensitive_Data_Storage_in_Improperly_Locked_Memory__w32_wchar_t"
+    },
+    {
+      "pair_id": "juliet_37736",
+      "vuln_idx": 37737,
+      "safe_idx": 37738,
+      "cwe": "CWE-758",
+      "project": "Juliet",
+      "filename": "testcases/CWE758_Undefined_Behavior/CWE758_Undefined_Behavior__char_pointer_alloca_use_08.c",
+      "base_testcase": "testcases/CWE758_Undefined_Behavior/CWE758_Undefined_Behavior__char_pointer_alloca_use_08.c"
+    }
+  ]
+}
