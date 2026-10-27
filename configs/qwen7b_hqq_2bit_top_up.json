@@ -1,0 +1,43 @@
+{
+  "name": "qwen7b_hqq_2bit_top_up",
+  "description": "Upgrade sensitivity: hqq4 on top-7 layers by S_up (KL recovery in the uniform-hqq2 context), rest hqq2",
+  "precision_map": {
+    "0": "hqq4",
+    "1": "hqq2",
+    "2": "hqq2",
+    "3": "hqq2",
+    "4": "hqq2",
+    "5": "hqq2",
+    "6": "hqq2",
+    "7": "hqq2",
+    "8": "hqq2",
+    "9": "hqq2",
+    "10": "hqq2",
+    "11": "hqq2",
+    "12": "hqq2",
+    "13": "hqq2",
+    "14": "hqq2",
+    "15": "hqq4",
+    "16": "hqq4",
+    "17": "hqq4",
+    "18": "hqq4",
+    "19": "hqq2",
+    "20": "hqq2",
+    "21": "hqq2",
+    "22": "hqq2",
+    "23": "hqq2",
+    "24": "hqq2",
+    "25": "hqq2",
+    "26": "hqq4",
+    "27": "hqq4"
+  },
+  "sensitive_layers": [
+    0,
+    15,
+    16,
+    17,
+    18,
+    26,
+    27
+  ]
+}

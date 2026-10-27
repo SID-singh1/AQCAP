@@ -1,0 +1,53 @@
+{
+  "name": "qwen7b_hqq_2bit_top_gen",
+  "description": "Generic baseline: HQQ4 on top-7 layers by S_gen (language modeling KL)",
+  "precision_map": {
+    "0": "hqq2",
+    "1": "hqq2",
+    "2": "hqq2",
+    "3": "hqq2",
+    "4": "hqq2",
+    "5": "hqq2",
+    "6": "hqq2",
+    "7": "hqq2",
+    "8": "hqq2",
+    "9": "hqq2",
+    "10": "hqq2",
+    "11": "hqq2",
+    "12": "hqq2",
+    "13": "hqq2",
+    "14": "hqq2",
+    "15": "hqq2",
+    "16": "hqq2",
+    "17": "hqq2",
+    "18": "hqq2",
+    "19": "hqq2",
+    "20": "hqq2",
+    "21": "hqq4",
+    "22": "hqq4",
+    "23": "hqq4",
+    "24": "hqq4",
+    "25": "hqq4",
+    "26": "hqq4",
+    "27": "hqq4"
+  },
+  "nf4_blocksize": 64,
+  "int8_layers": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ],
+  "sensitive_layers": [
+    21,
+    22,
+    23,
+    24,
+    25,
+    26,
+    27
+  ]
+}

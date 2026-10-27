@@ -1,0 +1,53 @@
+{
+  "name": "qwen7b_hqq_2bit_bottom_task",
+  "description": "Sanity check control: HQQ4 on bottom-7 layers by S_task (least sensitive)",
+  "precision_map": {
+    "0": "hqq2",
+    "1": "hqq4",
+    "2": "hqq2",
+    "3": "hqq2",
+    "4": "hqq2",
+    "5": "hqq2",
+    "6": "hqq2",
+    "7": "hqq2",
+    "8": "hqq2",
+    "9": "hqq2",
+    "10": "hqq2",
+    "11": "hqq2",
+    "12": "hqq2",
+    "13": "hqq2",
+    "14": "hqq2",
+    "15": "hqq2",
+    "16": "hqq2",
+    "17": "hqq2",
+    "18": "hqq2",
+    "19": "hqq2",
+    "20": "hqq4",
+    "21": "hqq4",
+    "22": "hqq4",
+    "23": "hqq4",
+    "24": "hqq4",
+    "25": "hqq4",
+    "26": "hqq2",
+    "27": "hqq2"
+  },
+  "nf4_blocksize": 64,
+  "int8_layers": [
+    1,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ],
+  "sensitive_layers": [
+    1,
+    20,
+    21,
+    22,
+    23,
+    24,
+    25
+  ]
+}

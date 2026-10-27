@@ -1,0 +1,43 @@
+{
+  "name": "qwen7b_hqq_2bit_rand_s2",
+  "description": "HQQ Random control (seed 2): 7 layers in 4-bit, 21 in 2-bit",
+  "precision_map": {
+    "0": "hqq4",
+    "1": "hqq4",
+    "2": "hqq2",
+    "3": "hqq2",
+    "4": "hqq2",
+    "5": "hqq2",
+    "6": "hqq2",
+    "7": "hqq2",
+    "8": "hqq2",
+    "9": "hqq4",
+    "10": "hqq2",
+    "11": "hqq2",
+    "12": "hqq2",
+    "13": "hqq2",
+    "14": "hqq4",
+    "15": "hqq2",
+    "16": "hqq4",
+    "17": "hqq4",
+    "18": "hqq2",
+    "19": "hqq4",
+    "20": "hqq2",
+    "21": "hqq2",
+    "22": "hqq2",
+    "23": "hqq2",
+    "24": "hqq2",
+    "25": "hqq2",
+    "26": "hqq2",
+    "27": "hqq2"
+  },
+  "hqq4_layers": [
+    0,
+    1,
+    9,
+    14,
+    16,
+    17,
+    19
+  ]
+}
