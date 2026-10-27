@@ -1,0 +1,76 @@
+{
+  "type": "metadata",
+  "run_id": "qwen7b_juliet_qwen7b_rand_s1_test_cap_off",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "dataset": "juliet",
+  "config_name": "qwen7b_rand_s1",
+  "config": {
+    "name": "qwen7b_rand_s1",
+    "description": "Qwen2.5-Coder-7B Random control (seed 1): 14 random layers INT8, 14 NF4",
+    "precision_map": {
+      "0": "nf4",
+      "1": "nf4",
+      "2": "int8",
+      "3": "int8",
+      "4": "int8",
+      "5": "nf4",
+      "6": "int8",
+      "7": "int8",
+      "8": "int8",
+      "9": "nf4",
+      "10": "nf4",
+      "11": "nf4",
+      "12": "int8",
+      "13": "nf4",
+      "14": "int8",
+      "15": "int8",
+      "16": "nf4",
+      "17": "nf4",
+      "18": "int8",
+      "19": "nf4",
+      "20": "int8",
+      "21": "int8",
+      "22": "nf4",
+      "23": "nf4",
+      "24": "int8",
+      "25": "int8",
+      "26": "nf4",
+      "27": "nf4"
+    },
+    "nf4_blocksize": 64
+  },
+  "split": "test",
+  "cap": "off",
+  "seed": 0,
+  "is_paired": true,
+  "weights_mb": 6823.642578125,
+  "initial_peak_mb": 6953.642578125,
+  "target_token_ids": {
+    "yes_ids": [
+      14004,
+      9454,
+      9693,
+      14080,
+      7414
+    ],
+    "no_ids": [
+      8996,
+      2753,
+      2152,
+      5664,
+      2308
+    ]
+  },
+  "env": {
+    "timestamp": "2026-10-22T20:56:43.216246+00:00",
+    "python_version": "3.13.15",
+    "torch_version": "2.11.0+cu128",
+    "transformers_version": "5.20.2",
+    "git_commit": "unversioned",
+    "cuda_available": true,
+    "gpu_name": "Tesla T4",
+    "gpu_vram_total_gb": 14.56219482421875,
+    "cuda_version": "12.8"
+  },
+  "total_samples": 1000
+}

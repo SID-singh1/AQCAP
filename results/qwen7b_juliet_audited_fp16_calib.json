@@ -1,0 +1,21 @@
+{
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "dataset": "juliet",
+  "split": "calib",
+  "audit_status": "LEAKAGE_FREE",
+  "samples_evaluated": 200,
+  "pairs_evaluated": 100,
+  "auroc": 0.6784,
+  "auroc_95_ci": [
+    0.625,
+    0.735
+  ],
+  "auprc": 0.6382,
+  "fpr_at_90_recall": 0.63,
+  "fpr_at_95_recall": 0.71,
+  "mean_p_vuln": 0.441,
+  "pc": 29.0,
+  "pv": 32.0,
+  "top1_compliance_pct": 100.0,
+  "elapsed_seconds": 35.7
+}

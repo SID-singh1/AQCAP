@@ -1,0 +1,75 @@
+{
+  "type": "metadata",
+  "run_id": "qwen7b_juliet_qwen7b_hqq_3bit_test_cap_off",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "dataset": "juliet",
+  "config_name": "qwen7b_hqq_3bit",
+  "config": {
+    "name": "qwen7b_hqq_3bit",
+    "description": "HQQ Uniform 3-bit baseline: all 28 layers HQQ 3-bit (group 64)",
+    "precision_map": {
+      "0": "hqq3",
+      "1": "hqq3",
+      "2": "hqq3",
+      "3": "hqq3",
+      "4": "hqq3",
+      "5": "hqq3",
+      "6": "hqq3",
+      "7": "hqq3",
+      "8": "hqq3",
+      "9": "hqq3",
+      "10": "hqq3",
+      "11": "hqq3",
+      "12": "hqq3",
+      "13": "hqq3",
+      "14": "hqq3",
+      "15": "hqq3",
+      "16": "hqq3",
+      "17": "hqq3",
+      "18": "hqq3",
+      "19": "hqq3",
+      "20": "hqq3",
+      "21": "hqq3",
+      "22": "hqq3",
+      "23": "hqq3",
+      "24": "hqq3",
+      "25": "hqq3",
+      "26": "hqq3",
+      "27": "hqq3"
+    }
+  },
+  "split": "test",
+  "cap": "off",
+  "seed": 0,
+  "is_paired": true,
+  "weights_mb": 4975.556640625,
+  "initial_peak_mb": 4975.556640625,
+  "target_token_ids": {
+    "yes_ids": [
+      14004,
+      9454,
+      9693,
+      14080,
+      7414
+    ],
+    "no_ids": [
+      8996,
+      2753,
+      2152,
+      5664,
+      2308
+    ]
+  },
+  "env": {
+    "timestamp": "2026-10-22T21:59:36.531431+00:00",
+    "python_version": "3.13.15",
+    "torch_version": "2.11.0+cu128",
+    "transformers_version": "5.20.2",
+    "git_commit": "unversioned",
+    "cuda_available": true,
+    "gpu_name": "Tesla T4",
+    "gpu_vram_total_gb": 14.56219482421875,
+    "cuda_version": "12.8"
+  },
+  "total_samples": 1000
+}

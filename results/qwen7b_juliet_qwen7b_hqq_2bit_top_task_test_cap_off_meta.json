@@ -1,0 +1,94 @@
+{
+  "type": "metadata",
+  "run_id": "qwen7b_juliet_qwen7b_hqq_2bit_top_task_test_cap_off",
+  "model": "Qwen/Qwen2.5-Coder-7B-Instruct",
+  "dataset": "juliet",
+  "config_name": "qwen7b_hqq_2bit_top_task",
+  "config": {
+    "name": "qwen7b_hqq_2bit_top_task",
+    "description": "Proposed method: HQQ4 on top-7 layers by S_task (task KL divergence)",
+    "precision_map": {
+      "0": "hqq2",
+      "1": "hqq2",
+      "2": "hqq2",
+      "3": "hqq2",
+      "4": "hqq2",
+      "5": "hqq2",
+      "6": "hqq2",
+      "7": "hqq2",
+      "8": "hqq2",
+      "9": "hqq2",
+      "10": "hqq4",
+      "11": "hqq4",
+      "12": "hqq2",
+      "13": "hqq2",
+      "14": "hqq2",
+      "15": "hqq4",
+      "16": "hqq2",
+      "17": "hqq4",
+      "18": "hqq4",
+      "19": "hqq2",
+      "20": "hqq2",
+      "21": "hqq2",
+      "22": "hqq2",
+      "23": "hqq2",
+      "24": "hqq2",
+      "25": "hqq2",
+      "26": "hqq4",
+      "27": "hqq4"
+    },
+    "nf4_blocksize": 64,
+    "int8_layers": [
+      10,
+      11,
+      15,
+      17,
+      18,
+      26,
+      27
+    ],
+    "sensitive_layers": [
+      10,
+      11,
+      15,
+      17,
+      18,
+      26,
+      27
+    ]
+  },
+  "split": "test",
+  "cap": "off",
+  "seed": 0,
+  "is_paired": true,
+  "weights_mb": 4436.765625,
+  "initial_peak_mb": 4436.765625,
+  "target_token_ids": {
+    "yes_ids": [
+      14004,
+      9454,
+      9693,
+      14080,
+      7414
+    ],
+    "no_ids": [
+      8996,
+      2753,
+      2152,
+      5664,
+      2308
+    ]
+  },
+  "env": {
+    "timestamp": "2026-10-22T22:34:18.340682+00:00",
+    "python_version": "3.13.15",
+    "torch_version": "2.11.0+cu128",
+    "transformers_version": "5.20.2",
+    "git_commit": "unversioned",
+    "cuda_available": true,
+    "gpu_name": "Tesla T4",
+    "gpu_vram_total_gb": 14.56219482421875,
+    "cuda_version": "12.8"
+  },
+  "total_samples": 1000
+}
