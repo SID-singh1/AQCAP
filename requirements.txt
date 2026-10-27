@@ -1,0 +1,12 @@
+# Versions used for the paper runs (Kaggle, Python 3.13, CUDA 12.8)
+torch>=2.4
+transformers>=4.46
+accelerate
+bitsandbytes>=0.45
+hqq
+numpy
+pandas
+scipy
+scikit-learn
+matplotlib
+pytest

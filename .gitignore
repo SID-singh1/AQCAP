@@ -1,0 +1,17 @@
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+# raw datasets are downloaded on demand
+data/jts_c_1_3_test.csv
+data/primevul_*.jsonl
+# LaTeX build output
+paper/*.aux
+paper/*.log
+paper/*.out
+paper/*.bbl
+paper/*.blg
+paper/*.pdf
+# secrets
+.env
+*.token
