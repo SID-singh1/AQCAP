@@ -1,0 +1,43 @@
+{
+  "name": "qwen7b_hqq_2bit_rand_s17",
+  "description": "Qwen2.5-Coder-7B random control (seed 17): 7 random layers hqq4, rest hqq2",
+  "precision_map": {
+    "0": "hqq4",
+    "1": "hqq2",
+    "2": "hqq2",
+    "3": "hqq2",
+    "4": "hqq2",
+    "5": "hqq4",
+    "6": "hqq2",
+    "7": "hqq2",
+    "8": "hqq2",
+    "9": "hqq2",
+    "10": "hqq2",
+    "11": "hqq4",
+    "12": "hqq2",
+    "13": "hqq2",
+    "14": "hqq2",
+    "15": "hqq2",
+    "16": "hqq2",
+    "17": "hqq2",
+    "18": "hqq4",
+    "19": "hqq2",
+    "20": "hqq4",
+    "21": "hqq2",
+    "22": "hqq2",
+    "23": "hqq2",
+    "24": "hqq2",
+    "25": "hqq4",
+    "26": "hqq4",
+    "27": "hqq2"
+  },
+  "sensitive_layers": [
+    0,
+    5,
+    11,
+    18,
+    20,
+    25,
+    26
+  ]
+}

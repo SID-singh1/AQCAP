@@ -1,0 +1,52 @@
+{
+  "name": "qwen7b_hqq_2bit_greedy",
+  "description": "Greedy interaction-aware allocation: hqq4 on 7 layers chosen by forward selection on calibration KL to FP16, rest hqq2",
+  "precision_map": {
+    "0": "hqq2",
+    "1": "hqq2",
+    "2": "hqq2",
+    "3": "hqq4",
+    "4": "hqq2",
+    "5": "hqq2",
+    "6": "hqq4",
+    "7": "hqq2",
+    "8": "hqq2",
+    "9": "hqq2",
+    "10": "hqq2",
+    "11": "hqq2",
+    "12": "hqq2",
+    "13": "hqq4",
+    "14": "hqq4",
+    "15": "hqq4",
+    "16": "hqq4",
+    "17": "hqq2",
+    "18": "hqq2",
+    "19": "hqq4",
+    "20": "hqq2",
+    "21": "hqq2",
+    "22": "hqq2",
+    "23": "hqq2",
+    "24": "hqq2",
+    "25": "hqq2",
+    "26": "hqq2",
+    "27": "hqq2"
+  },
+  "sensitive_layers": [
+    3,
+    6,
+    13,
+    14,
+    15,
+    16,
+    19
+  ],
+  "selection_order": [
+    16,
+    19,
+    6,
+    3,
+    14,
+    13,
+    15
+  ]
+}

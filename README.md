@@ -15,7 +15,8 @@ This repository grew out of **AQCAP** (Adaptive Quantization and Context-Aware P
 | 3 | **4-bit (and 3-bit) is enough.** On Qwen-7B/cleaned Juliet (FP16 0.624), INT8, NF4, HQQ-4 and HQQ-3 are TOST-equivalent to FP16 within ±0.02 AUROC, at 34–57% of FP16 weight memory. Sensitivity-guided INT8/NF4 mixing adds nothing. |
 | 4 | **Collapse is size-dependent.** Qwen-7B stays usable down to 3 bits, while Qwen-3B collapses at 3 bits: its top token is never YES/NO. A collapsed model's AUROC is arbitrary (0.30–0.67), so a **compliance gate** is needed. |
 | 5 | **At 2 bits, layer allocation is a lottery.** Keeping 7 of 28 layers at 4 bits spans 0.557–0.620 AUROC at equal memory. No sensitivity metric (S_gen, S_L2, S_task, or our deployment-context upgrade metric S_up) beats a 10-seed random baseline, because layer effects are non-additive. |
-| 6 | **Quantization shifts calibration more than ranking**, so thresholds must be re-selected after quantization. |
+| 6 | **Interaction-aware allocation works.** Greedy search over layer *sets* (`scripts/run_greedy_allocation.py`) picks 7 of 28 layers for 4-bit and reaches **0.628 AUROC at 4.33 GB** on Qwen-7B. That is FP16-equivalent at 31% of the memory, above all 10 random allocations, and better than uniform 3-bit and NF4. It cannot rescue a collapsed model (Qwen-3B). |
+| 7 | **Quantization shifts calibration more than ranking**, so thresholds must be re-selected after quantization. |
 
 Full numbers: [`paper/summary.csv`](paper/summary.csv). Paper source: [`paper/`](paper/).
 
@@ -33,6 +34,7 @@ scripts/
   run_eval.py                 evaluate one model x dataset x config
   run_sensitivity.py          single-layer sensitivity profiling
   run_upgrade_sensitivity.py  deployment-context (upgrade) sensitivity S_up
+  run_greedy_allocation.py    greedy interaction-aware layer allocation
   kaggle_eval_launcher.py     stage runner used for all experiments
   summarize_results.py        paired bootstrap, TOST, compliance -> paper/summary.csv
   make_figures.py             paper figures

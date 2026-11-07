@@ -41,9 +41,11 @@ def pareto(summary):
     uniform = {"fp16": "FP16", "int8": "INT8", "nf4": "NF4", "hqq_4bit": "HQQ-4", "hqq_3bit": "HQQ-3", "hqq_2bit": "HQQ-2"}
     fig, ax = plt.subplots(figsize=(3.4, 2.4))
     mixed48 = d[~d.name.isin(uniform) & ~d.name.str.startswith("hqq")]
-    mixed2 = d[d.name.str.startswith("hqq_2bit_")]
+    mixed2 = d[d.name.str.startswith("hqq_2bit_") & (d.name != "hqq_2bit_greedy")]
+    greedy = d[d.name == "hqq_2bit_greedy"]
     ax.scatter(mixed48.gb, mixed48.auroc, s=14, color=MUTED, label="INT8/NF4 mixes", zorder=2)
     ax.scatter(mixed2.gb, mixed2.auroc, s=14, color=ORANGE, label="2/4-bit mixes", zorder=2)
+    ax.scatter(greedy.gb, greedy.auroc, s=40, marker="*", color=AQUA, label="Greedy 2/4-bit", zorder=4)
     u = d[d.name.isin(uniform)]
     ax.errorbar(u.gb, u.auroc, yerr=[u.auroc - u.auroc_lo, u.auroc_hi - u.auroc], fmt="o", ms=4,
                 color=BLUE, ecolor=BLUE, elinewidth=0.8, capsize=0, label="Uniform", zorder=3)
@@ -63,7 +65,7 @@ def lowbit_selection(summary):
     d = summary[(summary.model == "qwen7b") & (summary.dataset == "juliet")].set_index("config")
     named = [("qwen7b_hqq_2bit_last7", "Last 7"), ("qwen7b_hqq_2bit_top_gen", "Top by $S_{gen}$"),
              ("qwen7b_hqq_2bit_first7", "First 7"), ("qwen7b_hqq_2bit_top_task", "Top by $S_{task}$"),
-             ("qwen7b_hqq_2bit_top_up", "Top by $S_{up}$")]
+             ("qwen7b_hqq_2bit_top_up", "Top by $S_{up}$"), ("qwen7b_hqq_2bit_greedy", "Greedy search")]
     named = [(k, v) for k, v in named if k in d.index]
     rand = d[d.index.str.startswith("qwen7b_hqq_2bit_rand_")].auroc.to_numpy()
     fig, ax = plt.subplots(figsize=(3.4, 2.2))
@@ -72,7 +74,7 @@ def lowbit_selection(summary):
     ax.scatter(rand, ys[0] + np.array(jitter), s=14, color=MUTED, zorder=3)
     ax.plot([rand.mean()] * 2, [ys[0] - 0.3, ys[0] + 0.3], color=INK2, lw=1.2)
     for y, (k, _) in zip(ys[1:], named):
-        ax.scatter(d.loc[k, "auroc"], y, s=22, color=ORANGE if "top_up" in k else BLUE, zorder=3)
+        ax.scatter(d.loc[k, "auroc"], y, s=22, color=ORANGE if "greedy" in k else BLUE, zorder=3)
     ax.axvline(d.loc["qwen7b_fp16", "auroc"], color=AQUA, lw=1, ls="--")
     ax.axvline(d.loc["qwen7b_hqq_2bit", "auroc"], color=INK2, lw=1, ls=":")
     ax.text(d.loc["qwen7b_fp16", "auroc"], ys[-1] + 0.6, "FP16", color=INK, fontsize=7, ha="center")

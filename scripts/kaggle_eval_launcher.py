@@ -315,6 +315,11 @@ def main():
             "llama8b_juliet",
             "qwen7b_hqq_upgrade",
             "qwen3b_pvu_hqq",
+            "greedy_smoke",
+            "deepseek_gate",
+            "qwen7b_rand_extra",
+            "qwen7b_greedy",
+            "qwen3b_greedy",
             "analyze",
             "package",
             "all_main",
@@ -452,6 +457,51 @@ def main():
         cfgs = (["qwen3b_hqq_4bit", "qwen3b_hqq_3bit", "qwen3b_hqq_2bit", "qwen3b_hqq_2bit_top_up"]
                 + [f"qwen3b_hqq_2bit_rand_s{s}" for s in range(10)])
         run_eval_suite(QWEN_3B_MODEL, dataset="primevul_unpaired", configs=cfgs, include_cap=False)
+
+    # 5f. Signal gate for a second model family (FP16, calibration splits)
+    if args.stage == "deepseek_gate":
+        for ds in ["juliet", "primevul_unpaired"]:
+            run_cmd([
+                "python", "scripts/run_eval.py",
+                "--model", "deepseek-ai/deepseek-coder-6.7b-instruct",
+                "--dataset", ds, "--config", "deepseek67b_fp16",
+                "--split", "calib", "--cap", "off", "--device", "auto",
+            ])
+
+    # 5g. 20 more random 2/4-bit layer sets for Qwen-7B (random baseline for greedy, n=30)
+    if args.stage == "qwen7b_rand_extra":
+        cfgs = [f"qwen7b_hqq_2bit_rand_s{s}" for s in range(10, 30)]
+        run_eval_suite(QWEN_7B_MODEL, dataset="juliet", configs=cfgs, include_cap=False)
+
+    # 5e. Greedy interaction-aware allocation at 2-bit (journal extension)
+    if args.stage == "greedy_smoke":
+        run_cmd([
+            "python", "scripts/run_greedy_allocation.py",
+            "--model", QWEN_3B_MODEL, "--dataset", "juliet",
+            "--prefix", "smoke_", "--budget", "1", "--max_samples", "16",
+            "--output_csv", "results/smoke_greedy.csv",
+        ])
+        print("[LAUNCHER] Greedy smoke test passed.")
+
+    if args.stage == "qwen7b_greedy":
+        if not os.path.isfile("configs/qwen7b_hqq_2bit_greedy.json"):
+            run_cmd([
+                "python", "scripts/run_greedy_allocation.py",
+                "--model", QWEN_7B_MODEL, "--dataset", "juliet",
+                "--prefix", "qwen7b_hqq_2bit_", "--budget", "7",
+                "--output_csv", "results/greedy_qwen7b_hqq2_juliet.csv",
+            ])
+        run_eval_suite(QWEN_7B_MODEL, dataset="juliet", configs=["qwen7b_hqq_2bit_greedy"], include_cap=False)
+
+    if args.stage == "qwen3b_greedy":
+        if not os.path.isfile("configs/qwen3b_hqq_2bit_greedy.json"):
+            run_cmd([
+                "python", "scripts/run_greedy_allocation.py",
+                "--model", QWEN_3B_MODEL, "--dataset", "primevul_unpaired",
+                "--prefix", "qwen3b_hqq_2bit_", "--budget", "9",
+                "--output_csv", "results/greedy_qwen3b_hqq2_primevul_unpaired.csv",
+            ])
+        run_eval_suite(QWEN_3B_MODEL, dataset="primevul_unpaired", configs=["qwen3b_hqq_2bit_greedy"], include_cap=False)
 
     # 5b. Llama-3.1-8B Juliet uniform bit-width sweep (cross-family generalisation)
     if args.stage == "llama8b_juliet":

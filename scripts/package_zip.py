@@ -31,7 +31,7 @@ def package_upload_zip():
     zip_filename = "upload.zip"
     include_dirs = ["aqcap", "configs", "scripts", "tests", "data"]
     include_files = [
-        "README.md", "ROADMAP.md", "PROMPT_FROZEN.md", "requirements.txt"
+        "README.md", "ROADMAP.md", "PROMPT_FROZEN.md", "requirements.txt",
     ]
 
     with zipfile.ZipFile(zip_filename, "w", zipfile.ZIP_DEFLATED) as z:
